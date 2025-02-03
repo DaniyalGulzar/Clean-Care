@@ -16,6 +16,7 @@ import {
 import Button from "@/components/Button";
 import { Collapse, Divider } from "antd";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const DashBoard = () => {
   const [activeKey, setActiveKey] = useState("1");
@@ -281,12 +282,14 @@ const DashBoard = () => {
             We take care of the small stuff so you can concentrate on your
             business.
           </span>
-          <Button
-            type="button"
-            className="w-[200px] md:w-[245px] h-[48px] md:h-[56px] text-sm md:text-lg rounded-sm mt-10 items-center flex justify-center py-2 px-4 bg-[#0f172a] text-white hover:bg-blue-700"
-          >
-            Contact Us Today
-          </Button>
+          <Link href="/contact">
+            <Button
+              type="button"
+              className="w-[200px] md:w-[245px] h-[48px] md:h-[56px] text-sm md:text-lg rounded-sm mt-10 items-center flex justify-center py-2 px-4 bg-[#0f172a] text-white hover:bg-blue-700"
+            >
+              Contact Us Today
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -417,13 +420,15 @@ const DashBoard = () => {
           <span className="text-sm md:text-lg lg:text-2xl text-center text-black mb-5">
             Schedule a call when it’s convenient for you.
           </span>
-          <Button
-            type="button"
-            className="w-[200px] md:w-[245px] h-[48px] md:h-[56px] text-sm md:text-lg rounded-sm mt-10 items-center flex justify-center py-2 px-4 bg-[#0f172a] text-white hover:bg-blue-700"
-          >
-            {/* Contact Us Today */}
-            Request a Cleaning Quote
-          </Button>
+          <Link href="/contact">
+            <Button
+              type="button"
+              className="w-[200px] md:w-[245px] h-[48px] md:h-[56px] text-sm md:text-lg rounded-sm mt-10 items-center flex justify-center py-2 px-4 bg-[#0f172a] text-white hover:bg-blue-700"
+            >
+              {/* Contact Us Today */}
+              Request a Cleaning Quote
+            </Button>
+          </Link>
         </div>
       </div>
 
