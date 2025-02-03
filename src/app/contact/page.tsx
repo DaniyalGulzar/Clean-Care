@@ -112,7 +112,7 @@ const page = () => {
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
               <Image
-                src="/myImages/Email.png"
+                src="/myImages/whatsapp.png"
                 alt="phone"
                 width={30}
                 height={30}
@@ -127,7 +127,7 @@ const page = () => {
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
               <Image
-                src="/myImages/Address.png"
+                src="/myImages/whatsapp.png"
                 alt="phone"
                 width={30}
                 height={30}

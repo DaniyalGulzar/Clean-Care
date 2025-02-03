@@ -148,7 +148,7 @@ const DashBoard = () => {
     },
     { src: "/myImages/Convention-Center.png", heading: "Convention Center" },
     { src: "/myImages/Business-Office.png", heading: "Bussiness office" },
-    { src: "/myImages/Church2.png", heading: "Places Of Worship" },
+    { src: "/myImages/Retail-Stores.png", heading: "Places Of Worship" },
     { src: "/myImages/Retail-Stores.png", heading: "Retail Stores" },
     { src: "/myImages/Schools.png", heading: "Schools" },
     { src: "/myImages/restaurant.png", heading: "Restaurants" },
