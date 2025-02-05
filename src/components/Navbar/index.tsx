@@ -4,11 +4,15 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Get the current path
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const pathname = usePathname() || ""; // Fix 'null' issue
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +23,35 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!(event.target as HTMLElement).closest(".dropdown")) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const servicesData = [
+    { id: 1, name: "Commercial Carpet Cleaning" },
+    { id: 2, name: "Commercial Sanitation Services" },
+    { id: 3, name: "Coronavirus Cleaning Services" },
+    { id: 4, name: "Day Porter Services" },
+    { id: 5, name: "Expert Disinfecting Services" },
+    { id: 6, name: "Flood Cleaning Services" },
+    { id: 7, name: "Restroom Cleaning Services" },
+    { id: 8, name: "Post Renovation Cleaning Services" },
+    { id: 9, name: "Veterinary & Animal Cleaning Services" },
+    { id: 10, name: "Window Cleaning Services" },
+  ];
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <nav
@@ -61,24 +94,62 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
-            {[
-              { name: "Home", path: "/dashboard_" },
-              { name: "About", path: "/about" },
-              { name: "Services", path: "/services" },
-              { name: "Contact", path: "/contact" },
-            ].map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
-                  pathname === item.path
-                    ? "bg-blue-600 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-blue-400"
-                }`}
+            <Link
+              href="/dashboard_"
+              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                pathname === "/dashboard_"
+                  ? "bg-blue-600 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-blue-400"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                pathname === "/about"
+                  ? "bg-blue-600 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-blue-400"
+              }`}
+            >
+              About
+            </Link>
+
+            {/* Services Dropdown */}
+            <li className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="flex items-center space-x-2"
               >
-                {item.name}
-              </Link>
-            ))}
+                <span>Services</span>
+                <FaChevronDown />
+              </button>
+              {isDropdownOpen && (
+                <div className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md w-48">
+                  <ul>
+                    {/* Map over servicesData to create dropdown items */}
+                    {servicesData.map((service: any) => (
+                      <li key={service.id} className="p-2 hover:bg-gray-200">
+                        <Link href={`/service/${service.id}`}>
+                          {service.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+
+            <Link
+              href="/contact"
+              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                pathname === "/contact"
+                  ? "bg-blue-600 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-blue-400"
+              }`}
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </div>
@@ -86,25 +157,60 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-900 text-white px-4 pb-4">
-          {[
-            { name: "Home", path: "/dashboard_" },
-            { name: "About", path: "/about" },
-            { name: "Services", path: "/services" },
-            { name: "Contact", path: "/contact" },
-          ].map((item) => (
-            <Link
-              key={item.path}
-              href={item.path}
-              className={`block py-2 px-4 rounded-md transition-all duration-300 ${
-                pathname === item.path
-                  ? "bg-blue-600 text-white"
-                  : "hover:bg-gray-700 hover:text-blue-400"
-              }`}
-              onClick={() => setIsOpen(false)} // Close menu on click
-            >
-              {item.name}
-            </Link>
-          ))}
+          <Link
+            href="/dashboard_"
+            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
+              pathname === "/dashboard_"
+                ? "bg-blue-600 text-white"
+                : "hover:bg-gray-700 hover:text-blue-400"
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
+              pathname === "/about"
+                ? "bg-blue-600 text-white"
+                : "hover:bg-gray-700 hover:text-blue-400"
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
+
+          {/* Mobile Services Dropdown */}
+          {/* <button
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="block w-full text-left py-2 px-4 rounded-md text-white hover:bg-gray-700"
+          >
+            Services
+          </button> */}
+          {dropdownOpen && (
+            <div className="bg-gray-800 rounded-md ">
+              {servicesData.map((service, index) => (
+                <Link
+                  className="block px-4 py-2  text-white hover:bg-gray-700"
+                  href={`/services/${service.id}`}
+                >
+                  {service.name}
+                </Link>
+              ))}
+            </div>
+          )}
+
+          <Link
+            href="/contact"
+            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
+              pathname === "/contact"
+                ? "bg-blue-600 text-white"
+                : "hover:bg-gray-700 hover:text-blue-400"
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </Link>
         </div>
       )}
     </nav>

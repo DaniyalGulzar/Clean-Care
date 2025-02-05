@@ -1,24 +1,43 @@
 import Image from "next/image";
-import SHARPDESK_LOGO from "../../../public/images/svgs/sharpdesk-logo-white.svg";
-import FACEBOOK from "../../../public/images/svgs/facebook.svg";
-import INSTA from "../../../public/images/svgs/insta.svg";
-import TWITTER from "../../../public/images/svgs/twitter.svg";
-import LINKEDIN from "../../../public/images/svgs/linkedin.svg";
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-// // <Link href="/dashboard">
-// <Image
-// src="/images/svgs/logo.svg"
-// width={169}
-// height={45}
-// alt="Logo"
-// />
-// </Link>
-
 function Footer() {
   const router = useRouter();
+
+  const services = [
+    "Commercial Carpet Cleaning",
+    "Commercial Sanitation Services",
+    "Coronavirus Cleaning Services",
+    "Day Porter Services",
+    "Expert Disinfecting Services",
+    "Flood Cleaning Services",
+    "Restroom Cleaning Services",
+    "Post Renovation Cleaning Services",
+    "Veterinary & Animal Cleaning Services",
+    "Window Cleaning Services",
+  ];
+
+  const industries = [
+    "Office",
+    "Hospital and Medical",
+    "Dental Office",
+    "Restaurant",
+    "Construction",
+    "Warehouses",
+    "Bank",
+    "Business Center",
+    "Call Center",
+    "Car Dealership",
+    "Convention Center",
+    "Federal Building",
+    "Gym",
+    "Hotel",
+    "School",
+    "Retail Store",
+    "Veterinary & Animal",
+  ];
   return (
     <>
       <div className="bg-[#0f172a]">
@@ -58,36 +77,14 @@ function Footer() {
               Services
             </h3>
             <ul className="space-y-[18px] text-left mt-4 list-none p-0 text-[#ffffff]">
-              <li className="transition-transform transform hover:scale-105">
-                Commercial Carpet Cleaning
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Commercial SAnitation Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Coronavirus Clening Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Day Porter Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Expert Disinfecting Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Flood Ceaning Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Restroom Ceaning Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Post Renovation Ceaning Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Veterinary & Animal Ceaning Services
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Window Ceaning Services
-              </li>
+              {services.map((service, index) => (
+                <li
+                  key={index}
+                  className="transition-transform transform hover:scale-105"
+                >
+                  {service}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="w-full md:w-auto px-4">
@@ -95,57 +92,14 @@ function Footer() {
               Industries
             </h3>
             <ul className="space-y-[18px] text-left mt-4 list-none p-0 text-[#ffffff]">
-              <li className="transition-transform transform hover:scale-105">
-                Office
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Hospital and Medical
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Dental Office
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Restaurant
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Construction
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Warehouses
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Bank
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Business Center
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Call Center
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Car Dealership
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Convention Center
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Federal Building
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Gym
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Hotel
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                School
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Retail Store
-              </li>
-              <li className="transition-transform transform hover:scale-105">
-                Veterinary & Animal
-              </li>
+              {industries.map((industry, index) => (
+                <li
+                  key={index}
+                  className="transition-transform transform hover:scale-105"
+                >
+                  {industry}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="w-full md:w-auto px-4">
