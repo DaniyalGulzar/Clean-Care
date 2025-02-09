@@ -43,7 +43,7 @@ function Footer() {
       <div className="bg-[#0f172a]">
         <div className="flex justify-center py-[30px]">
           <Image
-            src="/myImages/whitelogo.png"
+            src="https://drive.google.com/uc?export=view&id=1u7r2EpyzKdzIrwkJ9UfFLfmrNPqBK8y4"
             alt="Background"
             width={300}
             height={200}
@@ -57,11 +57,11 @@ function Footer() {
             </h3>
             <ul className="space-y-[18px] text-left mt-4 list-none p-0 text-[#ffffff]">
               <li className="transition-transform transform hover:scale-105">
-                Dallas Janitorial Services is one of the highest-rated and most
-                trusted commercial cleaning services in the Dallas-Fort Worth
-                Metroplex. We provide a safe, clean workspace for you and your
-                customers through the consistent delivery of our first-class
-                customer service and strict attention to detail.
+                Clean Care is one of the highest-rated and most trusted
+                commercial cleaning services in the Pakistan. We provide a safe,
+                clean workspace for you and your customers through the
+                consistent delivery of our first-class customer service and
+                strict attention to detail.
               </li>
               <li className="transition-transform transform hover:scale-105 mt-0 md:mt-20">
                 <span className="font-bold text-xl">Contact Us </span>

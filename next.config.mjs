@@ -1,7 +1,7 @@
 const nextConfig = {
-	images: {
-		domains: ['test.infinitysolutions.agency']
-	},
+  images: {
+    domains: ["test.infinitysolutions.agency", "drive.google.com"],
+  },
 };
 
 export default nextConfig;

@@ -24,7 +24,7 @@ const cardsSection = () => {
                   {/* Image Container */}
                   <div className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex items-center justify-center rounded-full bg-gray-300 flex-shrink-0">
                     <Image
-                      src="/myImages/turnover.png"
+                      src="https://drive.google.com/uc?export=view&id=1CfGh7kGCos62rEdWuFLwR0hdXnZBdnuA"
                       alt="Background"
                       width={70}
                       height={70}
@@ -67,25 +67,30 @@ const cardsSection = () => {
                 id: 1,
                 heading: "100% Satisfaction Guarantee",
                 description: "If it’s not right, we’ll fix it.",
-                image: "/myImages/percent.png",
+                image:
+                  "https://drive.google.com/uc?export=view&id=1YIFC7CdMR4sXDI29kkD_uIf9VeLByiAa",
               },
+
               {
                 id: 2,
                 heading: "Quality & Vetted Staff",
                 description: "We’re passionate about commercial cleaning.",
-                image: "/myImages/staff.png",
+                image:
+                  "https://drive.google.com/uc?export=view&id=1dv4qBCr5-14axCtN25aIfY8GWRQLOn00",
               },
               {
                 id: 3,
                 heading: "Customized Services",
                 description: "Pick the cleaning services you need.",
-                image: "/myImages/cleaning-service.png",
+                image:
+                  "https://drive.google.com/uc?export=view&id=1x799t06pPPV_uXwHTsqsUVpsIGED6K37",
               },
               {
                 id: 4,
                 heading: "Personal Attention",
                 description: "Get the right team for your site.",
-                image: "/myImages/team.png",
+                image:
+                  "https://drive.google.com/uc?export=view&id=1RfwBMraZnJ2lGtIngxxBNF77aVExZEub",
               },
             ].map((card) => (
               <div

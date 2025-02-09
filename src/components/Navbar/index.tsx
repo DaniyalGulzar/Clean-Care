@@ -1,18 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
+import servicesData from "@/app/data/services";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const pathname = usePathname() || ""; // Fix 'null' issue
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const pathname = usePathname() || "";
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,11 +25,10 @@ const Navbar = () => {
     };
   }, []);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (!(event.target as HTMLElement).closest(".dropdown")) {
-        setDropdownOpen(false);
+        setIsDropdownOpen(false);
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -36,22 +36,6 @@ const Navbar = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  const servicesData = [
-    { id: 1, name: "Commercial Carpet Cleaning" },
-    { id: 2, name: "Commercial Sanitation Services" },
-    { id: 3, name: "Coronavirus Cleaning Services" },
-    { id: 4, name: "Day Porter Services" },
-    { id: 5, name: "Expert Disinfecting Services" },
-    { id: 6, name: "Flood Cleaning Services" },
-    { id: 7, name: "Restroom Cleaning Services" },
-    { id: 8, name: "Post Renovation Cleaning Services" },
-    { id: 9, name: "Veterinary & Animal Cleaning Services" },
-    { id: 10, name: "Window Cleaning Services" },
-  ];
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   return (
     <nav
@@ -63,7 +47,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
             <Image
-              src="/myImages/whitelogo.png"
+              src="https://drive.google.com/uc?export=view&id=1u7r2EpyzKdzIrwkJ9UfFLfmrNPqBK8y4"
               alt="Logo"
               width={250}
               height={150}
@@ -94,42 +78,41 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
-            <Link
-              href="/dashboard_"
-              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
-                pathname === "/dashboard_"
-                  ? "bg-blue-600 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-blue-400"
-              }`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
-                pathname === "/about"
-                  ? "bg-blue-600 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-blue-400"
-              }`}
-            >
-              About
-            </Link>
+            {["dashboard", "about", "contact"].map((item) => (
+              <Link
+                key={item}
+                href={`/${item}`}
+                className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                  pathname === `/${item}`
+                    ? "bg-blue-600 text-white"
+                    : "text-white hover:bg-gray-700 hover:text-blue-400"
+                }`}
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+            ))}
 
             {/* Services Dropdown */}
-            <li className="relative">
+            <div className="relative dropdown">
               <button
-                onClick={toggleDropdown}
-                className="flex items-center space-x-2"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className={`flex items-center space-x-2 text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                  pathname.includes("/service")
+                    ? "bg-blue-600 text-white"
+                    : "text-white hover:bg-gray-700 hover:text-blue-400"
+                }`}
               >
                 <span>Services</span>
                 <FaChevronDown />
               </button>
               {isDropdownOpen && (
-                <div className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md w-48">
-                  <ul>
-                    {/* Map over servicesData to create dropdown items */}
-                    {servicesData.map((service: any) => (
-                      <li key={service.id} className="p-2 hover:bg-gray-200">
+                <div className="absolute left-[-80px] mt-2 bg-white text-black shadow-md rounded-md w-56 py-2 z-50">
+                  <ul className="overflow-auto h-[400px]">
+                    {servicesData.map((service) => (
+                      <li
+                        key={service.id}
+                        className="px-4 py-2 hover:bg-purple-100"
+                      >
                         <Link href={`/service/${service.id}`}>
                           {service.name}
                         </Link>
@@ -138,18 +121,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               )}
-            </li>
-
-            <Link
-              href="/contact"
-              className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
-                pathname === "/contact"
-                  ? "bg-blue-600 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-blue-400"
-              }`}
-            >
-              Contact
-            </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -157,60 +129,57 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-900 text-white px-4 pb-4">
-          <Link
-            href="/dashboard_"
-            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
-              pathname === "/dashboard_"
-                ? "bg-blue-600 text-white"
-                : "hover:bg-gray-700 hover:text-blue-400"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
-              pathname === "/about"
-                ? "bg-blue-600 text-white"
-                : "hover:bg-gray-700 hover:text-blue-400"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
+          {["dashboard", "about", "contact"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item}`}
+              className={`block py-2 px-4 rounded-md transition-all duration-300 ${
+                pathname === `/${item}`
+                  ? "bg-blue-600 text-white"
+                  : "hover:bg-gray-700 hover:text-blue-400"
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </Link>
+          ))}
 
-          {/* Mobile Services Dropdown */}
-          {/* <button
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="block w-full text-left py-2 px-4 rounded-md text-white hover:bg-gray-700"
+          {/* Services Modal Trigger */}
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="block w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 hover:text-blue-400 text-white"
           >
             Services
-          </button> */}
-          {dropdownOpen && (
-            <div className="bg-gray-800 rounded-md ">
-              {servicesData.map((service, index) => (
-                <Link
-                  className="block px-4 py-2  text-white hover:bg-gray-700"
-                  href={`/services/${service.id}`}
+          </button>
+        </div>
+      )}
+
+      {/* Modal for Mobile Services */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-gray-600 p-5 m-2 rounded-lg w-80 max-h-[60vh] overflow-auto">
+            <h2 className="text-xl font-bold mb-4 text-center">Our Services</h2>
+            <ul>
+              {servicesData.map((service) => (
+                <li
+                  key={service.id}
+                  className="py-2 px-1 text-white hover:bg-blue-200 cursor-pointer text-center"
+                  onClick={() => {
+                    setIsModalOpen(false);
+                    router.push(`/service/${service.id}`);
+                  }}
                 >
                   {service.name}
-                </Link>
+                </li>
               ))}
-            </div>
-          )}
-
-          <Link
-            href="/contact"
-            className={`block py-2 px-4 rounded-md transition-all duration-300 ${
-              pathname === "/contact"
-                ? "bg-blue-600 text-white"
-                : "hover:bg-gray-700 hover:text-blue-400"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
+            </ul>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="mt-4 w-full bg-red-500 text-white py-2 rounded-lg"
+            >
+              Close
+            </button>
+          </div>
         </div>
       )}
     </nav>

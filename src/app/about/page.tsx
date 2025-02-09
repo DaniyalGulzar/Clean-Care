@@ -8,23 +8,54 @@ import React from "react";
 import MotionFrame from "@/components/MotionDiv";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import HomeHeader from "@/components/Home_header";
 
 const page = () => {
   const imageData = [
-    { src: "/myImages/Construction.png", heading: "Constructions" },
-    { src: "/myImages/Call-Center.png", heading: "Call Center" },
     {
-      src: "/myImages/Medical-Office.png",
+      src: "https://drive.google.com/uc?export=view&id=16-VgAtA4wfrGHHhtb2sY2bi_OorV_KTP",
+      heading: "Constructions",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=18qRB2_ZQCUoRANUpsMJPHPUsA5uCVTYu",
+      heading: "Call Center",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1H00hMXfkEaupxm4UknEY3brjA_ZTXcE4",
       heading: "Hospital & Medical Office",
     },
-    { src: "/myImages/Convention-Center.png", heading: "Convention Center" },
-    { src: "/myImages/Business-Office.png", heading: "Bussiness office" },
-    { src: "/myImages/Church2.png", heading: "Places Of Worship" },
-    { src: "/myImages/Retail-Stores.png", heading: "Retail Stores" },
-    { src: "/myImages/Schools.png", heading: "Schools" },
-    { src: "/myImages/restaurant.png", heading: "Restaurants" },
-    { src: "/myImages/Warehouse3.png", heading: "Warehouse" },
-    { src: "/myImages/hotels3.png", heading: "Hotels" },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1YpA0qi9Wgmzj_KM_S0umpeA45z9IKuq-",
+      heading: "Convention Center",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1nI7O5TUbs5bH9oJkeMSkqcTPRdH72E_I",
+      heading: "Bussiness office",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1xv7xmWfzKzgqymxFCTPloBXJgxL0-gIi",
+      heading: "Places Of Worship",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1ghab4sI_lZC8vHr2JdnNnpxGPZBoi2F5",
+      heading: "Retail Stores",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1KgTlwBnj8nyTuDtqxtMmLN5Yp-eQ84hQ",
+      heading: "Schools",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1WQaBPdXLxmIvlsBsZUONq1fX7bLHxSdH",
+      heading: "Restaurants",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1qlZDds374UN5XwKD6E1YgNUp1LMyujsV",
+      heading: "Warehouse",
+    },
+    {
+      src: "https://drive.google.com/uc?export=view&id=1s4ZpoSKKEU_uqZL9XtUF3QYLLT564vNz",
+      heading: "Hotels",
+    },
   ];
   return (
     <div className="relative h-screen">
@@ -40,7 +71,7 @@ const page = () => {
         </span>
       </div>
 
-      <div className="relative h-full flex flex-col items-center justify-center">
+      {/* <div className="relative h-full flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/myImages/bg_image.png"
@@ -61,6 +92,77 @@ const page = () => {
             About us
           </div>
         </div>
+      </div> */}
+      <HomeHeader title="About Us" />
+
+      {/* there about us content placed here  */}
+      <div className="max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg shadow-lg">
+        {/* Introduction Text */}
+        <p className="text-lg text-white text-center text-justify">
+          At Clean Care, we take pride in being one of the highest-rated and
+          most trusted commercial cleaning services in Pakistan. Our commitment
+          to excellence ensures that businesses, offices, and commercial spaces
+          remain spotless, hygienic, and welcoming. We provide all types of
+          cleaning services across Pakistan, delivering top-notch solutions for
+          offices, hospitals, educational institutions, shopping malls,
+          industrial facilities, and more. With a focus on quality, reliability,
+          and customer satisfaction, our team ensures a safe and clean
+          environment for both employees and customers.
+        </p>
+
+        {/* Why Choose Us Section */}
+        <h2 className="text-2xl md:text-3xl text-gray-300 font-semibold mt-6 text-center">
+          Why Choose Clean Care?
+        </h2>
+
+        {/* List of Features */}
+        <ul className="mt-4 space-y-4 text-white">
+          <li className="flex items-start space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span>
+              <span className="font-bold text-gray-300">
+                Comprehensive Cleaning Solutions –{" "}
+              </span>
+              From commercial spaces to deep cleaning, we do it all.
+            </span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span>
+              <span className="font-bold text-gray-300">
+                Trained & Certified Staff –{" "}
+              </span>
+              Our team consists of highly skilled professionals.
+            </span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span>
+              <span className="font-bold text-gray-300">
+                Eco-Friendly Products –{" "}
+              </span>
+              We use safe and effective cleaning solutions.
+            </span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span>
+              <span className="font-bold text-gray-300">
+                Affordable Pricing –{" "}
+              </span>
+              High-quality cleaning services at competitive rates.
+            </span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span>
+              <span className="font-bold text-gray-300">
+                Customer Satisfaction –{" "}
+              </span>
+              Your satisfaction is our priority.
+            </span>
+          </li>
+        </ul>
       </div>
 
       <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 my-10 md:my-16 text-center px-4 md:px-8 lg:px-20">
@@ -102,7 +204,7 @@ const page = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-xs md:max-w-md lg:max-w-lg shadow-lg rounded-2xl overflow-hidden">
               <Image
-                src="/myImages/Group-image.png"
+                src="https://drive.google.com/uc?export=view&id=1tt8-RNwpqAoVanNFAW_JKeMoffIl8bbR"
                 alt="group"
                 className="w-full h-auto object-cover"
                 height={590}
@@ -151,27 +253,29 @@ const page = () => {
       <MotionFrame imageData={imageData} />
 
       <div className="my-5 md:my-20">
-        <div className="bg-gray-300 grid grid-cols-2 items-center pl-4 md:pl-8 py-4 ">
-          <div className="flex flex-col items-start">
-            <span className="text-4xl font-bold mb-4 text-black cursor-pointer">
+        <div className="bg-gray-300 p-4 md:p-8 flex flex-col md:grid md:grid-cols-2 items-center text-center md:text-left">
+          {/* Image on top in small screens, right in large screens */}
+          <div className="flex justify-center md:justify-end order-1 md:order-2 mb-4 md:mb-0">
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1PTLU1QUaCpsloXTxhrzxhHmB_HIlUoP2"
+              alt="Background"
+              width={630}
+              height={370}
+              className="w-full h-auto max-w-[600px] rounded-md"
+            />
+          </div>
+
+          {/* Text and Button in the center for small screens, left for large screens */}
+          <div className="flex flex-col items-center md:items-start order-2 md:order-1">
+            <span className="text-3xl md:text-4xl font-bold mb-4 text-black cursor-pointer">
               Do Your Part to Stop the Spread of Illnesses
             </span>
             <p className="text-md text-black cursor-pointer mb-4">
               Read about our cleaning and disinfectant solutions for COVID-19
             </p>
-            <Button className="bg-[#0f172a] text-white px-4 py-2 rounded-md font-semibold">
+            <Button className="bg-[#0f172a] text-white px-6 py-3 rounded-md font-semibold">
               Learn More
             </Button>
-          </div>
-
-          <div className="flex justify-end items-center">
-            <Image
-              src="/myImages/spray2.png"
-              alt="Background"
-              width={630}
-              height={370}
-              className="w-full h-full md:w-[600px] md:h-[370px] rounded-md "
-            />
           </div>
         </div>
       </div>
@@ -183,7 +287,7 @@ const page = () => {
       <div className="absolute right-10 bottom-10">
         <div className="flex justify-center items-center rounded-full w-[82px] h-[82px]  mt-20">
           <Image
-            src="/myImages/arrowtop.png"
+            src="https://drive.google.com/uc?export=view&id=1_acUtitgK5-P0EFU5RYf_BfYX__zEwjB"
             alt="Scroll to Top"
             width={50}
             height={50}

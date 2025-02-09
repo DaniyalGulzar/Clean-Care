@@ -42,7 +42,7 @@ const AnimatedGrid: React.FC<AnimatedGridProps> = ({ imageData }) => {
         className="col-span-1 sm:col-span-2 md:col-span-3 flex justify-center"
         variants={itemVariants}
       >
-        <span className="text-2xl sm:text-3xl md:text-5xl font-bold text-center">
+        <span className="font-semibold text-2xl md:text-5xl">
           Local Industries and Organizations We Serve
         </span>
       </motion.div>
