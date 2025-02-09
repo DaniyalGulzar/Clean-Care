@@ -128,7 +128,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900 text-white px-4 pb-4">
+        <div className="md:hidden bg-gray-900 text-white p-4">
           {["dashboard", "about", "contact"].map((item) => (
             <Link
               key={item}

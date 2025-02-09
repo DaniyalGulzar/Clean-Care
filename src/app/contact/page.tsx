@@ -6,7 +6,15 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
 import MotionFrame from "@/components/MotionDiv";
-import { FaArrowRight, FaPhone, FaWhatsapp } from "react-icons/fa";
+import {
+  FaAddressBook,
+  FaAddressCard,
+  FaAmilia,
+  FaArrowRight,
+  FaMailBulk,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -46,39 +54,42 @@ const page = () => {
           {" "}
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
-              <Image
+              {/* <Image
                 src="https://drive.google.com/uc?export=view&id=1T7eHS4T4AzSCXgWJEmoui9E8QEJWXEMl"
                 alt="phone"
                 width={30}
                 height={30}
                 className="w-[30px] h-[30px]"
-              />
+              /> */}
+              <FaPhone className="text-2xl" />
               <span className="text-lg font-semibold">Phone Number</span>
             </div>
             <p className="text-lg font-normal mt-1 ml-7">+923024199408</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
-              <Image
+              {/* <Image
                 src="https://drive.google.com/uc?export=view&id=1Q6SkBKIwljucSl2MJ4fT2W0JXZ1sslNx"
                 alt="whatsapp"
                 width={30}
                 height={30}
                 className="w-[30px] h-[30px]"
-              />
+              /> */}
+              <FaWhatsapp className="text-2xl" />
               <span className="text-lg font-semibold">Call/Whattsapp</span>
             </div>
             <p className="text-lg font-normal mt-1 ml-7">+923024199408</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
-              <Image
+              {/* <Image
                 src="https://drive.google.com/uc?export=view&id=1I9M9p3bx7fd1VG-m30GdeJH23smTe-8D"
                 alt="email"
                 width={30}
                 height={30}
                 className="w-[30px] h-[30px]"
-              />
+              /> */}
+              <FaMailBulk className="text-2xl" />
               <span className="text-lg font-semibold">Email</span>
             </div>
             <p className="text-lg font-normal mt-1 ml-7">
@@ -87,13 +98,14 @@ const page = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-2">
-              <Image
+              {/* <Image
                 src="https://drive.google.com/uc?export=view&id=1VsTCPVYL1fFUezpS9F5CodjNhijM1trw"
                 alt="Address"
                 width={30}
                 height={30}
                 className="w-[30px] h-[30px]"
-              />
+              /> */}
+              <FaAddressBook className="text-2xl" />
               <span className="text-lg font-semibold">Address</span>
             </div>
             <p className="text-lg font-normal mt-1 ml-10">

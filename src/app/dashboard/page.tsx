@@ -1,9 +1,9 @@
 "use client";
-import InputField from "@/components/InputField";
-import Navbar from "@/components/Navbar";
+
 import Image from "next/image";
 import Cards from "@/components/CardsSectin";
 import MotionFrame from "@/components/MotionDiv";
+import servicesData from "@/app/data/services";
 
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -45,18 +45,8 @@ const DashBoard = () => {
       description:
         "Keep your workplace clean and free of distractions with customized commercial cleaning services that meet your unique needs. ",
     },
-    {
-      key: "2",
-      label: "Janitorial Services",
-      description:
-        "Increase productivity & innovation with a clean space maintained by our team of dedicated professionals..",
-    },
-    {
-      key: "3",
-      label: "Disinfectant Services ",
-      description:
-        "Keep your team & customers healthy by sanitizing the germs that cause COVID-19, the flu and other contagious illnesses.",
-    },
+    //
+
     {
       key: "4",
       label: "Porter Services",
@@ -187,13 +177,6 @@ const DashBoard = () => {
     },
   ];
 
-  const [formData, setFormData] = useState({
-    name: "",
-    address: "",
-    phone: "",
-    email: "",
-  });
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -217,7 +200,7 @@ const DashBoard = () => {
         </span>
         <FaArrowRight className="text-white mx-2 md:mx-4 animate-move" />
         <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
-          +92(3024199408)
+          +923024199408
         </span>
       </div>
 
@@ -318,46 +301,35 @@ const DashBoard = () => {
         <div className="col-span-12 md:col-span-6 text-left">
           <Collapse
             activeKey={activeKey}
-            onChange={(key) => {
-              if (typeof key === "string") {
-                setActiveKey(key);
-              } else if (Array.isArray(key) && key.length > 0) {
-                setActiveKey(key[0]);
-              }
-            }}
+            onChange={(key) => setActiveKey(Array.isArray(key) ? key[0] : key)}
             accordion
             expandIcon={() => null}
             bordered={false}
-            items={items.map(({ key, label, description }) => ({
-              key,
+            items={servicesData.map((service) => ({
+              key: service.id,
               label: (
                 <div
                   className="font-bold text-xl md:text-3xl"
                   style={{
                     borderLeft: "3px solid gray",
                     padding: "10px",
-                    color: activeKey === key ? "blue-500" : "white",
-                    fontWeight: activeKey === key ? "bold" : "normal",
+                    color: "white",
                     cursor: "pointer",
-                    borderBottom: "none",
                   }}
                 >
-                  {label}
+                  {service.name}
                 </div>
               ),
               children: (
-                <div
-                  className="text-sm md:text-lg"
-                  style={{
-                    margin: 0,
-                    paddingLeft: "10px",
-                  }}
-                >
-                  {description} <br />
+                <div className="text-sm md:text-lg pl-2 text-white">
+                  {service.description.split("\n").slice(0, 2).join(" ")}...
                   <br />
-                  <span className="text-blue-500 cursor-pointer">
+                  <Link
+                    href={`/service/${service.id}`}
+                    className="text-blue-500 cursor-pointer"
+                  >
                     Read More &gt;&gt;
-                  </span>
+                  </Link>
                 </div>
               ),
             }))}

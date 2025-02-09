@@ -2,22 +2,23 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import servicesData from "@/app/data/services";
 
 function Footer() {
   const router = useRouter();
 
-  const services = [
-    "Commercial Carpet Cleaning",
-    "Commercial Sanitation Services",
-    "Coronavirus Cleaning Services",
-    "Day Porter Services",
-    "Expert Disinfecting Services",
-    "Flood Cleaning Services",
-    "Restroom Cleaning Services",
-    "Post Renovation Cleaning Services",
-    "Veterinary & Animal Cleaning Services",
-    "Window Cleaning Services",
-  ];
+  // const services = [
+  //   "Commercial Carpet Cleaning",
+  //   "Commercial Sanitation Services",
+  //   "Coronavirus Cleaning Services",
+  //   "Day Porter Services",
+  //   "Expert Disinfecting Services",
+  //   "Flood Cleaning Services",
+  //   "Restroom Cleaning Services",
+  //   "Post Renovation Cleaning Services",
+  //   "Veterinary & Animal Cleaning Services",
+  //   "Window Cleaning Services",
+  // ];
 
   const industries = [
     "Office",
@@ -77,12 +78,12 @@ function Footer() {
               Services
             </h3>
             <ul className="space-y-[18px] text-left mt-4 list-none p-0 text-[#ffffff]">
-              {services.map((service, index) => (
+              {servicesData.map((service, index) => (
                 <li
-                  key={index}
+                  key={service.id}
                   className="transition-transform transform hover:scale-105"
                 >
-                  {service}
+                  <Link href={`/service/${service.id}`}>{service.name}</Link>
                 </li>
               ))}
             </ul>

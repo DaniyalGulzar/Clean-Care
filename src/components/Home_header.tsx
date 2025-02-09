@@ -14,7 +14,7 @@ function HomeHeader({ title }: { title: string }) {
           className="w-full h-full"
         >
           <Image
-            src="https://drive.google.com/uc?export=view&id=1ou3HnzyHRKEJgGULV-gWwk7QNvHrsk9G"
+            src="https://drive.google.com/uc?export=view&id=1-X4rWeFepYvgk7lsTGX9-vdGk01Tr50z"
             alt="Background"
             layout="fill"
             objectFit="cover"

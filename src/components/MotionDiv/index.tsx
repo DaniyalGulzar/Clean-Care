@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import servicesData from "@/app/data/services";
 
 // TypeScript interface for imageData items
 interface ImageItem {

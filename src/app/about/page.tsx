@@ -96,18 +96,50 @@ const page = () => {
       <HomeHeader title="About Us" />
 
       {/* there about us content placed here  */}
-      <div className="max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg shadow-lg">
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 rounded-lg shadow-lg">
         {/* Introduction Text */}
-        <p className="text-lg text-white text-center text-justify">
-          At Clean Care, we take pride in being one of the highest-rated and
-          most trusted commercial cleaning services in Pakistan. Our commitment
-          to excellence ensures that businesses, offices, and commercial spaces
-          remain spotless, hygienic, and welcoming. We provide all types of
-          cleaning services across Pakistan, delivering top-notch solutions for
+        <p className="text-lg text-white text-justify sm:text-left ">
+          {/* <p className="text-lg text-white  text-justify"> */}
+          At Clean Care, we take immense pride in being recognized as one of the
+          highest-rated and most trusted commercial cleaning services in
+          Pakistan. With an unwavering commitment to excellence, we strive to
+          ensure that businesses, offices, and commercial spaces remain not just
+          clean but also hygienic, safe, and welcoming for employees, customers,
+          and visitors. Our comprehensive cleaning solutions are tailored to
+          meet the diverse needs of various industries, including corporate
           offices, hospitals, educational institutions, shopping malls,
-          industrial facilities, and more. With a focus on quality, reliability,
-          and customer satisfaction, our team ensures a safe and clean
-          environment for both employees and customers.
+          industrial facilities, and many more. Whether it's routine janitorial
+          services, deep cleaning, disinfecting, carpet and upholstery cleaning,
+          or specialized industrial cleaning, our expert team is equipped with
+          the latest tools, eco-friendly cleaning products, and industry-best
+          practices to deliver outstanding results.
+          <br /> At Clean Care, we understand that a clean environment directly
+          impacts health, productivity, and overall well-being. That’s why we go
+          beyond surface-level cleaning to ensure every nook and corner is
+          thoroughly sanitized, reducing the risk of germs, bacteria, and
+          allergens. Our highly trained and professional staff undergo rigorous
+          training to meet international hygiene standards, guaranteeing
+          impeccable service and customer satisfaction. We take a proactive
+          approach to cleaning, customizing our services to fit the specific
+          requirements of our clients, whether they need daily, weekly, or
+          on-demand cleaning solutions.
+          <br /> One of our core values is reliability, and we believe in
+          maintaining long-term relationships with our clients by consistently
+          delivering high-quality cleaning services. Our dedication to customer
+          satisfaction means that we listen to our clients’ needs, respond
+          promptly to their concerns, and continuously improve our services to
+          exceed expectations. With a strong focus on using environmentally
+          friendly and sustainable cleaning methods, we ensure that our
+          practices not only enhance the cleanliness of your workspace but also
+          contribute positively to a greener planet.
+          <br /> From small offices to large corporate buildings, from medical
+          facilities to commercial complexes, Clean Care is your trusted partner
+          for maintaining a pristine and sanitized environment. Our goal is to
+          create a space that fosters productivity, enhances brand reputation,
+          and promotes the well-being of everyone who enters. Choose Clean Care
+          for professional, efficient, and top-quality cleaning services across
+          Pakistan, and experience the difference of a spotless, healthier, and
+          more inviting workspace.
         </p>
 
         {/* Why Choose Us Section */}
@@ -117,49 +149,77 @@ const page = () => {
 
         {/* List of Features */}
         <ul className="mt-4 space-y-4 text-white">
-          <li className="flex items-start space-x-3">
+          <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
-            <span>
-              <span className="font-bold text-gray-300">
+            <span className="text-gray-300">
+              <span className="font-bold">
                 Comprehensive Cleaning Solutions –{" "}
               </span>
               From commercial spaces to deep cleaning, we do it all.
             </span>
           </li>
-          <li className="flex items-start space-x-3">
+
+          <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
-            <span>
-              <span className="font-bold text-gray-300">
-                Trained & Certified Staff –{" "}
-              </span>
+            <span className="text-gray-300">
+              <span className="font-bold">Trained & Certified Staff – </span>
               Our team consists of highly skilled professionals.
             </span>
           </li>
-          <li className="flex items-start space-x-3">
+          <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
-            <span>
-              <span className="font-bold text-gray-300">
-                Eco-Friendly Products –{" "}
-              </span>
+            <span className="text-gray-300">
+              <span className="font-bold">Eco-Friendly Products – </span>
               We use safe and effective cleaning solutions.
             </span>
           </li>
-          <li className="flex items-start space-x-3">
+          <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
-            <span>
-              <span className="font-bold text-gray-300">
-                Affordable Pricing –{" "}
-              </span>
+            <span className="text-gray-300">
+              <span className="font-bold">Affordable Pricing – </span>
               High-quality cleaning services at competitive rates.
             </span>
           </li>
-          <li className="flex items-start space-x-3">
+          <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
-            <span>
-              <span className="font-bold text-gray-300">
-                Customer Satisfaction –{" "}
-              </span>
+            <span className="text-gray-300">
+              <span className="font-bold">Customer Satisfaction – </span>
               Your satisfaction is our priority.
+            </span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span className="text-gray-300">
+              <span className="font-bold">Fast & Efficient Service – </span>
+              We value your time and work quickly without compromising quality.
+            </span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span className="text-gray-300">
+              <span className="font-bold">Pet & Child Safe – </span>
+              Our products are non-toxic and safe for families.{" "}
+            </span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span className="text-gray-300">
+              <span className="font-bold">Licensed & Insured – </span>
+              Fully certified for your peace of mind.
+            </span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span className="text-gray-300">
+              <span className="font-bold">Advanced Equipment – </span>
+              Using modern tools for efficient and effective cleaning.
+            </span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <span className="text-green-400 text-xl">✔</span>
+            <span className="text-gray-300">
+              <span className="font-bold">24/7 Availability – </span>
+              We are here for you any time, day or night.
             </span>
           </li>
         </ul>
