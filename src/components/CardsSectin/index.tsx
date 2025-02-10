@@ -66,7 +66,7 @@ const cardsSection = () => {
               {
                 id: 1,
                 heading: "100% Satisfaction Guarantee",
-                description: "If it’s not right, we’ll fix it.",
+                description: "If it's not right, we'll fix it.",
                 image:
                   "https://drive.google.com/uc?export=view&id=1YIFC7CdMR4sXDI29kkD_uIf9VeLByiAa",
               },
@@ -74,7 +74,7 @@ const cardsSection = () => {
               {
                 id: 2,
                 heading: "Quality & Vetted Staff",
-                description: "We’re passionate about commercial cleaning.",
+                description: "We're passionate about commercial cleaning.",
                 image:
                   "https://drive.google.com/uc?export=view&id=1dv4qBCr5-14axCtN25aIfY8GWRQLOn00",
               },

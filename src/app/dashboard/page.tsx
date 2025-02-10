@@ -63,7 +63,7 @@ const DashBoard = () => {
       key: "6",
       label: "Commercial Restroom Cleaning",
       description:
-        "We know you don’t want to do it, so let us keep your restroom clean, fresh-smelling and free of germs and pathogens.",
+        "We know you don't want to do it, so let us keep your restroom clean, fresh-smelling and free of germs and pathogens.",
     },
     {
       key: "7",
@@ -223,7 +223,7 @@ const DashBoard = () => {
 
           <div className="col-span-12 md:col-span-6 text-left">
             <span className="text-2xl md:text-3xl font-bold">
-              Clean Care – Trusted Cleaning Services in Pakistan Since 2020
+              Clean Care - Trusted Cleaning Services in Pakistan Since 2020
             </span>
             <p className="my-4 text-sm md:text-xl  text-gray-600">
               Spruce up your local business, office, hotel, store, warehouse, or
@@ -234,11 +234,11 @@ const DashBoard = () => {
               We know how difficult it is to keep your business running smoothly
               and efficiently. So the last thing you want to think about is
               keeping the place clean. Let our team of dedicated professionals
-              sweat the small stuff for you. We’ll keep your workspace clean,
-              your restrooms sanitized, and your windows clear.
+              sweat the small stuff for you. We&apos;ll keep your workspace
+              clean, your restrooms sanitized, and your windows clear.
             </p>
             <p className="my-4 text-sm md:text-xl  text-gray-600">
-              Whether it’s onsite porter services, after-hours cleanings or
+              Whether it&apos;s onsite porter services, after-hours cleanings or
               monthly carpet cleanings, Dallas Janitorial provides every service
               you need to maintain a clean, safe and healthy workspace.
             </p>
@@ -359,7 +359,7 @@ const DashBoard = () => {
             </p>
             <p className="my-4 text-sm md:text-xl  text-gray-600">
               For more information on keeping your business safe and productive,
-              schedule a call when it’s convenient for you.
+              schedule a call when it&apos;s convenient for you.
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mr-0 md:mr-[50px] ">
@@ -390,7 +390,7 @@ const DashBoard = () => {
             Ready to Keep Your Workspace Safe and Productive?
           </span>
           <span className="text-sm md:text-lg lg:text-2xl text-center text-black mb-5">
-            Schedule a call when it’s convenient for you.
+            Schedule a call when it&apos;s convenient for you.
           </span>
           <Link href="/contact">
             <Button

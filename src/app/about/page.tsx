@@ -71,35 +71,10 @@ const page = () => {
         </span>
       </div>
 
-      {/* <div className="relative h-full flex flex-col items-center justify-center">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/myImages/bg_image.png"
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full opacity-70"
-          />
-        </div>
-
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent mix-blend-multiply"></div>
-
-        <div className="fixed top-14 md:top-16 w-full z-50 bg-white shadow-md">
-          <Navbar />
-        </div>
-        <div className="relative z-20 container mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
-          <div className="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center mt-[100px] ml-0 md:ml-80 md:mt-0 md:text-left">
-            About us
-          </div>
-        </div>
-      </div> */}
       <HomeHeader title="About Us" />
 
-      {/* there about us content placed here  */}
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 rounded-lg shadow-lg">
-        {/* Introduction Text */}
         <p className="text-lg text-white text-justify sm:text-left ">
-          {/* <p className="text-lg text-white  text-justify"> */}
           At Clean Care, we take immense pride in being recognized as one of the
           highest-rated and most trusted commercial cleaning services in
           Pakistan. With an unwavering commitment to excellence, we strive to
@@ -114,8 +89,8 @@ const page = () => {
           the latest tools, eco-friendly cleaning products, and industry-best
           practices to deliver outstanding results.
           <br /> At Clean Care, we understand that a clean environment directly
-          impacts health, productivity, and overall well-being. That’s why we go
-          beyond surface-level cleaning to ensure every nook and corner is
+          impacts health, productivity, and overall well-being. That&apos;s why
+          we go beyond surface-level cleaning to ensure every nook and corner is
           thoroughly sanitized, reducing the risk of germs, bacteria, and
           allergens. Our highly trained and professional staff undergo rigorous
           training to meet international hygiene standards, guaranteeing
@@ -126,7 +101,7 @@ const page = () => {
           <br /> One of our core values is reliability, and we believe in
           maintaining long-term relationships with our clients by consistently
           delivering high-quality cleaning services. Our dedication to customer
-          satisfaction means that we listen to our clients’ needs, respond
+          satisfaction means that we listen to our clients&apos; needs, respond
           promptly to their concerns, and continuously improve our services to
           exceed expectations. With a strong focus on using environmentally
           friendly and sustainable cleaning methods, we ensure that our
@@ -153,7 +128,7 @@ const page = () => {
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
               <span className="font-bold">
-                Comprehensive Cleaning Solutions –{" "}
+                Comprehensive Cleaning Solutions :{" "}
               </span>
               From commercial spaces to deep cleaning, we do it all.
             </span>
@@ -162,63 +137,63 @@ const page = () => {
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Trained & Certified Staff – </span>
+              <span className="font-bold">Trained & Certified Staff : </span>
               Our team consists of highly skilled professionals.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Eco-Friendly Products – </span>
+              <span className="font-bold">Eco-Friendly Products : </span>
               We use safe and effective cleaning solutions.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Affordable Pricing – </span>
+              <span className="font-bold">Affordable Pricing :</span>
               High-quality cleaning services at competitive rates.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Customer Satisfaction – </span>
+              <span className="font-bold">Customer Satisfaction :</span>
               Your satisfaction is our priority.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Fast & Efficient Service – </span>
+              <span className="font-bold">Fast & Efficient Service :</span>
               We value your time and work quickly without compromising quality.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Pet & Child Safe – </span>
+              <span className="font-bold">Pet & Child Safe : </span>
               Our products are non-toxic and safe for families.{" "}
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Licensed & Insured – </span>
+              <span className="font-bold">Licensed & Insured :</span>
               Fully certified for your peace of mind.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">Advanced Equipment – </span>
+              <span className="font-bold">Advanced Equipment : </span>
               Using modern tools for efficient and effective cleaning.
             </span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-green-400 text-xl">✔</span>
             <span className="text-gray-300">
-              <span className="font-bold">24/7 Availability – </span>
+              <span className="font-bold">24/7 Availability : </span>
               We are here for you any time, day or night.
             </span>
           </li>

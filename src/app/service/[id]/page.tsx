@@ -46,13 +46,6 @@ const ServicePage = () => {
 
       <HomeHeader title="Services" />
 
-      {/* <div className="relative z-20 container mx-auto px-4 lg:px-8 flex flex-col items-center text-white">
-        <h1 className="text-4xl font-bold">{service.name}</h1>
-        <p className="text-lg mt-4 max-w-2xl text-center">
-          {service.description}
-        </p>
-      </div> */}
-
       <div className="mb-[10px]">
         <div className="my-10 grid grid-cols-12 gap-4  px-6 md:px-8 items-center">
           <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mr-0 md:mr-[50px] ">
@@ -76,11 +69,11 @@ const ServicePage = () => {
               We know how difficult it is to keep your business running smoothly
               and efficiently. So the last thing you want to think about is
               keeping the place clean. Let our team of dedicated professionals
-              sweat the small stuff for you. We’ll keep your workspace clean,
-              your restrooms sanitized, and your windows clear.
+              sweat the small stuff for you. We&apos;ll keep your workspace
+              clean, your restrooms sanitized, and your windows clear.
             </p>
             <p className="my-4 text-sm md:text-xl  text-gray-600">
-              Whether it’s onsite porter services, after-hours cleanings or
+              Whether it&apos;s onsite porter services, after-hours cleanings or
               monthly carpet cleanings, Dallas Janitorial provides every service
               you need to maintain a clean, safe and healthy workspace.
             </p>

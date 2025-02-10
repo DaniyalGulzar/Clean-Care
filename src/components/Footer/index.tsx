@@ -6,25 +6,10 @@ import servicesData from "@/app/data/services";
 
 function Footer() {
   const router = useRouter();
-
-  // const services = [
-  //   "Commercial Carpet Cleaning",
-  //   "Commercial Sanitation Services",
-  //   "Coronavirus Cleaning Services",
-  //   "Day Porter Services",
-  //   "Expert Disinfecting Services",
-  //   "Flood Cleaning Services",
-  //   "Restroom Cleaning Services",
-  //   "Post Renovation Cleaning Services",
-  //   "Veterinary & Animal Cleaning Services",
-  //   "Window Cleaning Services",
-  // ];
-
   const industries = [
     "Office",
     "Hospital and Medical",
     "Dental Office",
-    "Restaurant",
     "Construction",
     "Warehouses",
     "Bank",

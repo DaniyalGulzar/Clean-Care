@@ -60,7 +60,7 @@ const servicesData = [
     id: "window-cleaning-services",
     name: "Window Cleaning Services",
     description:
-      "Enhance your building’s appearance with our professional window cleaning services. We remove dirt, smudges, and streaks from windows, leaving them crystal clear. Our team uses safe, eco-friendly cleaning solutions and advanced equipment to clean high-rise and ground-level windows. Whether you have a small storefront or a large commercial building, we provide streak-free results that improve visibility and aesthetics.",
+      "Enhance your building's appearance with our professional window cleaning services. We remove dirt, smudges, and streaks from windows, leaving them crystal clear. Our team uses safe, eco-friendly cleaning solutions and advanced equipment to clean high-rise and ground-level windows. Whether you have a small storefront or a large commercial building, we provide streak-free results that improve visibility and aesthetics.",
     image:
       "https://drive.google.com/uc?export=view&id=1IhPjhpZzVe5NdP8FaIuNZfZioOsr2Lnx",
   },
