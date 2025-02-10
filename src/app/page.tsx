@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!session) {
-      router.push("dashboard_");
+      router.push("dashboard");
     }
   }, [session, router]);
 

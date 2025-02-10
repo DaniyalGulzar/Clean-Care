@@ -62,7 +62,7 @@ function HomeHeader({ title }: { title: string }) {
 
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="relative px-12 py-6 text-4xl md:text-6xl m-[-10px] md:m-0 lg:text-7xl font-bold text-center"
+                className="relative px-8 py-6 text-4xl md:text-6xl m-[-10px] md:m-0 lg:text-7xl font-bold text-center"
               >
                 <span className="relative">
                   <span className="bg-gradient-to-r from-blue-700 to-blue-400 text-transparent bg-clip-text">

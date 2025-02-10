@@ -305,6 +305,7 @@ const DashBoard = () => {
             accordion
             expandIcon={() => null}
             bordered={false}
+            className="border-b-0"
             items={servicesData.map((service) => ({
               key: service.id,
               label: (
