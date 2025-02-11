@@ -6,13 +6,7 @@ import MotionFrame from "@/components/MotionDiv";
 import servicesData from "@/app/data/services";
 
 import React, { useEffect, useRef, useState } from "react";
-import {
-  FaArrowRight,
-  FaEnvelope,
-  FaHeadset,
-  FaPhone,
-  FaUser,
-} from "react-icons/fa";
+import { FaArrowRight, FaUserCircle } from "react-icons/fa";
 import Button from "@/components/Button";
 import { Collapse, Divider } from "antd";
 import Footer from "@/components/Footer";
@@ -21,7 +15,6 @@ import HomeHeader from "@/components/Home_header";
 
 const DashBoard = () => {
   const [activeKey, setActiveKey] = useState("1");
-  const [pageTitle, setPageTitle] = useState("Home");
   const [sticky, setSticky] = useState(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,46 +31,6 @@ const DashBoard = () => {
       behavior: "smooth",
     });
   };
-  const items = [
-    {
-      key: "1",
-      label: "Commercial Cleaning Services",
-      description:
-        "Keep your workplace clean and free of distractions with customized commercial cleaning services that meet your unique needs. ",
-    },
-    //
-
-    {
-      key: "4",
-      label: "Porter Services",
-      description:
-        "Get the onsite help you need to keep your business running smoothly all day with our porter services.",
-    },
-    {
-      key: "5",
-      label: "Commercial Floor Cleaning",
-      description:
-        "Impress your clients by putting the luster back on your floor with regular maintenance and cleaning.",
-    },
-    {
-      key: "6",
-      label: "Commercial Restroom Cleaning",
-      description:
-        "We know you don't want to do it, so let us keep your restroom clean, fresh-smelling and free of germs and pathogens.",
-    },
-    {
-      key: "7",
-      label: "Commercial Carpet Cleaning",
-      description:
-        "Extend the life of your carpets and keep them looking great with our thorough but affordable carpet cleaning.",
-    },
-    {
-      key: "8",
-      label: "Commercial Window Washing",
-      description:
-        "Spruce up your building façade and rid your windows of dirt, fingerprints and unsightly streaks.",
-    },
-  ];
 
   const customers = [
     {
@@ -213,9 +166,9 @@ const DashBoard = () => {
         <div className="my-10 grid grid-cols-12 gap-4  px-6 md:px-8 items-center">
           <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mr-0 md:mr-[50px] ">
             <Image
-              src="https://drive.google.com/uc?export=view&id=1kU7mkAP29lL6vF3uT8G1MfpZYOXNvPD9"
+              src="https://drive.google.com/uc?export=view&id=1Wd5CCAGC96AdJjPDkVXtF38bLu5xYJpj"
               alt="Background"
-              width={530}
+              width={500}
               height={370}
               className="w-full h-full md:w-[600px] md:h-[370px] rounded-md"
             />
@@ -397,7 +350,6 @@ const DashBoard = () => {
               type="button"
               className="w-[200px] md:w-[245px] h-[48px] md:h-[56px] text-sm md:text-lg rounded-sm mt-10 items-center flex justify-center py-2 px-4 bg-[#0f172a] text-white hover:bg-blue-700"
             >
-              {/* Contact Us Today */}
               Request a Cleaning Quote
             </Button>
           </Link>
@@ -451,11 +403,9 @@ const DashBoard = () => {
                   />
                   <p className="my-[20px] text-[#666666]">{customer.text}</p>
                   <div className="flex items-center mt-[48px]">
-                    <Image
-                      src="/svgs/landingprofile.svg"
-                      alt="user"
-                      height={70}
-                      width={70}
+                    <FaUserCircle
+                      className="text-gray-600 bg-white rounded-full border border-gray-300 p-1 shadow-md"
+                      size={50}
                     />
                     <div className="ml-2">
                       <span className="block">{customer.name}</span>
@@ -472,7 +422,6 @@ const DashBoard = () => {
       </div>
       <div className="my-5 md:my-20">
         <div className="bg-gray-300 p-4 md:p-8 flex flex-col md:grid md:grid-cols-2 items-center text-center md:text-left">
-          {/* Image on top in small screens, right in large screens */}
           <div className="flex justify-center md:justify-end order-1 md:order-2 mb-4 md:mb-0">
             <Image
               src="https://drive.google.com/uc?export=view&id=1PTLU1QUaCpsloXTxhrzxhHmB_HIlUoP2"
@@ -483,7 +432,6 @@ const DashBoard = () => {
             />
           </div>
 
-          {/* Text and Button in the center for small screens, left for large screens */}
           <div className="flex flex-col items-center md:items-start order-2 md:order-1">
             <span className="text-3xl md:text-4xl font-bold mb-4 text-black cursor-pointer">
               Do Your Part to Stop the Spread of Illnesses
