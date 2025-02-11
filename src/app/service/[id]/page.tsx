@@ -12,6 +12,7 @@ import Button from "@/components/Button";
 import { useState } from "react";
 
 const ServicePage = () => {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const params = useParams();
   const id = params?.id;
 
@@ -32,8 +33,6 @@ const ServicePage = () => {
       </div>
     );
   }
-
-  const [openFAQ, setOpenFAQ] = useState(null);
 
   const toggleFAQ = (index: any) => {
     setOpenFAQ(openFAQ === index ? null : index);
