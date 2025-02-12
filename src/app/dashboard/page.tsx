@@ -166,7 +166,7 @@ const DashBoard = () => {
         <div className="my-10 grid grid-cols-12 gap-4  px-6 md:px-8 items-center">
           <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mr-0 md:mr-[50px] ">
             <Image
-              src="https://drive.google.com/uc?export=view&id=1Wd5CCAGC96AdJjPDkVXtF38bLu5xYJpj"
+              src="https://drive.google.com/uc?export=view&id=1Vs2vhlEI1bRBynDdqtmurDhhCoRJIhsK"
               alt="Background"
               width={500}
               height={370}
@@ -243,7 +243,7 @@ const DashBoard = () => {
       <div className="my-10 grid grid-cols-12 gap-4  px-6 md:px-8 items-center">
         <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mr-0 md:mr-[50px] ">
           <Image
-            src="https://drive.google.com/uc?export=view&id=1kU7mkAP29lL6vF3uT8G1MfpZYOXNvPD9"
+            src="https://drive.google.com/uc?export=view&id=1UYqVB6n0v1qE-sSKg6BeWaSOk8hDN-OP"
             alt="Background"
             width={530}
             height={370}
