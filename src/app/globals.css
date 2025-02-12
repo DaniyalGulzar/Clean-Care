@@ -14,7 +14,7 @@ p {
   margin-bottom: 10px;
 }
 
-:where(.css-dev-only-do-not-override-qnu6hi).ant-collapse > .ant-collapse-item {
+:where(.css-qnu6hi).ant-collapse-borderless > .ant-collapse-item {
   border-bottom: none;
 }
 
