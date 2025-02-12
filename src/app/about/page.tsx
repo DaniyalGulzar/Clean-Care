@@ -85,7 +85,7 @@ const AboutPage = () => {
       <HomeHeader title="About Us" />
 
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 ">
-        <p className="text-lg text-white text-justify sm:text-left ">
+        <div className="text-lg text-white text-left md:text-justify">
           <p>
             At Clean Care, we take immense pride in being recognized as one of
             the highest-rated and most trusted commercial cleaning services in
@@ -138,7 +138,8 @@ const AboutPage = () => {
             cleaning services across Pakistan, and experience the difference of
             a spotless, healthier, and more inviting workspace.
           </p>
-        </p>
+        </div>
+
         <h2 className="text-2xl md:text-3xl text-blue-600 font-semibold mt-6 text-center">
           Why Choose Clean Care?
         </h2>
