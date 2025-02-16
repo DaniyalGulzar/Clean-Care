@@ -235,7 +235,7 @@ const HomePage = () => {
             Our Local Commercial Cleaning & Janitorial Services
           </span>
           <span className="text-sm md:text-lg lg:text-2xl text-center text-gray-600 mb-5">
-            Trust Dallas Janitorial Services to take care of all your commercial
+            Trust Clean Care Services to take care of all your commercial
             cleaning needs. We provide the following services:
           </span>
         </div>
