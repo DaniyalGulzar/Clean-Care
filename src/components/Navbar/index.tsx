@@ -78,19 +78,22 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
-            {["dashboard", "about", "contact"].map((item) => (
-              <Link
-                key={item}
-                href={`/${item}`}
-                className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
-                  pathname === `/${item}`
-                    ? "bg-blue-600 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-blue-400"
-                }`}
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </Link>
-            ))}
+            {["dashboard", "about", "contact"].map((item) => {
+              const linkPath = item === "dashboard" ? "/" : `/${item}`;
+              return (
+                <Link
+                  key={item}
+                  href={linkPath}
+                  className={`text-xl px-4 py-2 rounded-full transition-all duration-300 ${
+                    pathname === linkPath
+                      ? "bg-blue-600 text-white"
+                      : "text-white hover:bg-gray-700 hover:text-blue-400"
+                  }`}
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </Link>
+              );
+            })}
 
             {/* Services Dropdown */}
             <div className="relative dropdown">
