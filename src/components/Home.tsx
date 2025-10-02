@@ -305,7 +305,7 @@ const HomePage = () => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        {/* Google Analytics - Replace with your tracking ID */}
+        {/* Google Analytics - Replace with your tracking ID
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -318,6 +318,28 @@ const HomePage = () => {
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     `,
+          }}
+        /> */}
+
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="googlefa4ddcdfadb2a742"
+        />
+
+        {/* Google Analytics  */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GTM-P5JCLZ2R"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-P5JCLZ2R');
+      `,
           }}
         />
       </Head>
