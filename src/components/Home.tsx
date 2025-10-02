@@ -330,7 +330,7 @@ const HomePage = () => {
         {/* Google Analytics  */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=GTM-P5JCLZ2R"
+          src="https://www.googletagmanager.com/gtag/js?id=G-T60RRFF425"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -338,7 +338,7 @@ const HomePage = () => {
         window.dataLayer = window.dataLayer || [];
         function gtag(){window.dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GTM-P5JCLZ2R');
+        gtag('config', 'G-T60RRFF425');
       `,
           }}
         />
