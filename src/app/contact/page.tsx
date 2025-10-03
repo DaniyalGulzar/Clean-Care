@@ -51,18 +51,21 @@ const page = () => {
           <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
             +92(3024199408)
           </span>
+          {/* <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
+            +92(3024199408)
+          </span> */}
         </div>
 
         <HomeHeader title="Contact Us" />
 
         <div className="flex justify-center items-center my-20">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6803.7119900654925!2d74.36390799158215!3d31.50064184469572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905b7bfe005a9%3A0x9007fdd3229144a6!2sCavalry%20Ground%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1738239941602!5m2!1sen!2s"
-            className="w-full sm:w-[600px] md:w-[700px] lg:w-[900px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px]"
-            style={{ border: "0" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13612.885786912948!2d74.3200031989153!3d31.463093990852496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906a3c42292d5%3A0xd414eff2f9ffbb19!2sKot%20Lakhpat%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1759487203396!5m2!1sen!2s"
+            className="w-full sm:w-[600px] md:w-[700px] lg:w-[900px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] border-0"
+            allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          />
         </div>
 
         <div className="flex justify-center ">
@@ -73,23 +76,43 @@ const page = () => {
                 <FaPhone className="text-4xl text-blue-600" />
                 <span className="text-lg font-semibold">Phone Number</span>
               </div>
-              <p className="text-lg font-normal mt-1 ml-7">+923024199408</p>
+              <a
+                href="tel:+923024199408"
+                className="text-lg font-normal mt-1 ml-7 block"
+              >
+                +92 302 4199408
+              </a>
+              <a
+                href="tel:+923084629101"
+                className="text-lg font-normal ml-7 block"
+              >
+                +92 308 4629101
+              </a>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex items-center space-x-2">
                 <FaWhatsapp className="text-4xl text-blue-600" />
                 <span className="text-lg font-semibold">Call/Whattsapp</span>
               </div>
-              <p className="text-lg font-normal mt-1 ml-7">+923024199408</p>
+              <a
+                href="tel:+923024199408"
+                className="text-lg font-normal mt-1 ml-7 block"
+              >
+                +92 302 4199408
+              </a>
+              <a
+                href="tel:+923084629101"
+                className="text-lg font-normal ml-7 block"
+              >
+                +92 308 4629101
+              </a>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex items-center space-x-2">
                 <FaMailBulk className="text-4xl text-blue-600" />
                 <span className="text-lg font-semibold">Email</span>
               </div>
-              <p className="text-lg font-normal mt-1 ml-7">
-                amirgulzar504@gmail.com
-              </p>
+              <p className="text-lg font-normal mt-1 ml-7">info@cleancare.pk</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex items-center space-x-2">
@@ -97,7 +120,8 @@ const page = () => {
                 <span className="text-lg font-semibold">Address</span>
               </div>
               <p className="text-lg font-normal mt-1 ml-10">
-                Cavalary Ground Lahore Cantt (54810)
+                Shop No.2, Shabnam Colony Ittefaq Road <br />
+                Near PSO Oil Depo Kot Lakhpat, Lahore.
               </p>
             </div>
           </div>
