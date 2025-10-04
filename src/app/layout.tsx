@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   description:
     "Clean Care provides professional janitorial and cleaning services across Lahore and Pakistan. We specialize in commercial cleaning, office cleaning, residential cleaning, deep cleaning, carpet cleaning, and sanitization services. Available 24/7 with trained staff, eco-friendly products, and competitive rates.",
   keywords:
-    "janitorial services Lahore, cleaning services Pakistan, professional cleaning company, office cleaning Lahore, commercial cleaning services, residential cleaning Lahore, deep cleaning services, carpet cleaning Lahore, floor cleaning services, sanitization services Pakistan, disinfection services, housekeeping services, industrial cleaning, hospital cleaning services, school cleaning services, restaurant cleaning, retail store cleaning, warehouse cleaning, post construction cleaning, move in move out cleaning, window cleaning services, upholstery cleaning, bathroom cleaning services, kitchen cleaning services, eco-friendly cleaning, green cleaning services, 24/7 cleaning services, professional cleaners Lahore, cleaning company Pakistan, janitorial staff, facility management, building maintenance, corporate cleaning services, event cleaning services, periodic cleaning services, one-time deep cleaning, contract cleaning services, affordable cleaning Lahore",
+    "+923024199048 --janitorial services Lahore, cleaning services Pakistan, professional cleaning company, office cleaning Lahore, commercial cleaning services, residential cleaning Lahore, deep cleaning services, carpet cleaning Lahore, floor cleaning services, sanitization services Pakistan, disinfection services, housekeeping services, industrial cleaning, hospital cleaning services, school cleaning services, restaurant cleaning, retail store cleaning, warehouse cleaning, post construction cleaning, move in move out cleaning, window cleaning services, upholstery cleaning, bathroom cleaning services, kitchen cleaning services, eco-friendly cleaning, green cleaning services, 24/7 cleaning services, professional cleaners Lahore, cleaning company Pakistan, janitorial staff, facility management, building maintenance, corporate cleaning services, event cleaning services, periodic cleaning services, one-time deep cleaning, contract cleaning services, affordable cleaning Lahore",
   authors: [{ name: "Clean Care Janitorial Services" }],
   creator: "Clean Care Team",
   publisher: "Clean Care Janitorial Services",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title:
       "Clean Care Janitorial Services | Professional Cleaning Solutions Lahore & Pakistan",
     description:
-      "Leading janitorial and cleaning services provider in Lahore and across Pakistan. Offering commercial, residential, office, and industrial cleaning with trained staff, eco-friendly products, and 24/7 availability. Trust Pakistan's premier cleaning company for all your sanitation needs.",
+      " +923024199048 --Leading janitorial and cleaning services provider in Lahore and across Pakistan. Offering commercial, residential, office, and industrial cleaning with trained staff, eco-friendly products, and 24/7 availability. Trust Pakistan's premier cleaning company for all your sanitation needs.",
     url: "https://www.cleancare.pk",
     siteName: "Clean Care Janitorial Services",
     images: [
@@ -237,7 +237,7 @@ export default function RootLayout({
                   url: "https://www.cleancare.pk",
                   name: "Clean Care Janitorial Services",
                   description:
-                    "Professional cleaning and janitorial services in Lahore and across Pakistan for commercial, residential, and industrial spaces.",
+                    " +923024199048 -- Professional cleaning and janitorial services in Lahore and across Pakistan for commercial, residential, and industrial spaces.",
                   publisher: {
                     "@id": "https://www.cleancare.pk/#organization",
                   },
@@ -293,7 +293,7 @@ export default function RootLayout({
                   ],
                   hasMap: "https://maps.google.com/?q=31.5804,74.3587",
                   description:
-                    "Professional janitorial and cleaning services for offices, homes, commercial spaces, and industrial facilities in Lahore and Pakistan.",
+                    " +923024199048 -- Professional janitorial and cleaning services for offices, homes, commercial spaces, and industrial facilities in Lahore and Pakistan.",
                   areaServed: [
                     {
                       "@type": "City",

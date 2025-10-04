@@ -49,7 +49,7 @@ const page = () => {
           </span>
           <FaArrowRight className="text-white mx-2 md:mx-4 animate-move" />
           <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
-            +92(3024199408)
+            +92(3024199048)
           </span>
           {/* <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
             +92(3024199408)
@@ -77,10 +77,10 @@ const page = () => {
                 <span className="text-lg font-semibold">Phone Number</span>
               </div>
               <a
-                href="tel:+923024199408"
+                href="tel:+923024199048"
                 className="text-lg font-normal mt-1 ml-7 block"
               >
-                +92 302 4199408
+                +92 302 4199048
               </a>
               <a
                 href="tel:+923084629101"
@@ -95,10 +95,10 @@ const page = () => {
                 <span className="text-lg font-semibold">Call/Whattsapp</span>
               </div>
               <a
-                href="tel:+923024199408"
+                href="tel:+923024199048"
                 className="text-lg font-normal mt-1 ml-7 block"
               >
-                +92 302 4199408
+                +92 302 4199048
               </a>
               <a
                 href="tel:+923084629101"

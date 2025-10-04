@@ -119,7 +119,7 @@ const ServicePage = () => {
           </span>
           <FaArrowRight className="text-white mx-2 md:mx-4 animate-move" />
           <span className="text-base md:text-2xl lg:text-3xl font-semibold text-white whitespace-nowrap">
-            +92(3024199408)
+            +92(3024199048)
           </span>
         </div>
 

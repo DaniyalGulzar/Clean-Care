@@ -52,9 +52,13 @@ function Footer() {
               <li className="transition-transform transform hover:scale-105 mt-0 md:mt-20">
                 <span className="font-bold text-xl">Contact Us </span>
                 {/* <p>Clean Care</p> */}
-                <p className="mt-3">Cavalary Ground Lahore Cantt (54810)</p>
+                <p className="mt-3">
+                  Shop No.2, Shabnam Colony Ittefaq Road <br />
+                  Near PSO Oil Depo Kot Lakhpat, Lahore.
+                </p>
                 <span className="font-bold text-xl"> call us: </span>{" "}
-                <span> +923024199408</span>
+                <span> +923024199048</span>
+                <span> +923084629101</span>
               </li>
             </ul>
           </div>

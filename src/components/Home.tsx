@@ -208,7 +208,7 @@ const HomePage = () => {
         </title>
         <meta
           name="description"
-          content="Clean Care provides professional janitorial and cleaning services across Lahore and Pakistan. Trusted commercial, residential, office cleaning with trained staff and eco-friendly products. Available 24/7."
+          content=" +923024199048 --Clean Care provides professional janitorial and cleaning services across Lahore and Pakistan. Trusted commercial, residential, office cleaning with trained staff and eco-friendly products. Available 24/7."
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
