@@ -78,7 +78,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
-            {["dashboard", "about", "contact"].map((item) => {
+            {["dashboard", "about", "booking", "contact"].map((item) => {
               const linkPath = item === "dashboard" ? "/" : `/${item}`;
               return (
                 <Link
@@ -132,7 +132,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-900 text-white p-4">
-          {["dashboard", "about", "contact"].map((item) => (
+          {["dashboard", "about", "booking", "contact"].map((item) => (
             <Link
               key={item}
               href={`/${item}`}

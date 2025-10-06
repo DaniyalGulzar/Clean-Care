@@ -227,7 +227,7 @@ const HomePage = () => {
         {/* Keywords */}
         <meta
           name="keywords"
-          content="janitorial services Lahore, cleaning services Pakistan, clean care, office cleaning Lahore, commercial cleaning, residential cleaning, deep cleaning services, carpet cleaning Lahore, sanitization services, professional cleaning company, housekeeping services, floor cleaning, window cleaning, disinfection services Pakistan"
+          content="Cleaning services in Lahore, Janitorial services in Lahore, Cleaning services in Sialkot, Cleaning services in Bank, Cleaning services in Retail Store, Professional cleaning services, House cleaning services, Office cleaning services, Hospital cleaning services, Malls cleaning services Cleaning services in Punjab, Janitorial services in Punjab, Floor Cleaning, Solar Panel Cleaning, janitorial services Lahore, cleaning services Pakistan, clean care, office cleaning Lahore, commercial cleaning, residential cleaning, deep cleaning services, carpet cleaning Lahore, sanitization services, professional cleaning company, housekeeping services, floor cleaning, window cleaning, disinfection services Pakistan"
         />
 
         {/* Author and Publisher */}
